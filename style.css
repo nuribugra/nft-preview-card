@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Paragraph's font size: 18px */
+
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --mainBG-darkBlue: hsl(217, 54%, 11%);
+    --cardBG-darkBlue: hsl(216, 50%, 16%);
+    --line-darkBlue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--mainBG-darkBlue);
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    width: 300px;
+    margin: 4rem auto;
+    border: 2px solid var(--cardBG-darkBlue);
+    border-radius: 1.5rem;
+    background-color: var(--cardBG-darkBlue);
+    padding: 1.7rem;
+    box-shadow: 0 20px 0px 14px hsla(214, 51%, 8%, 0.347),0 0 0px 40px hsla(214, 54%, 10%, 0.347);
+}
+
+.card-brand {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.main-img {
+    width: 100%;
+    border-radius: 1rem;
+    display: block;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: var(--cyan);
+    border-radius: 1rem;
+}
+.card-brand:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: .5s;
+}
+.view {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+.card-brand:hover .overlay + .view {
+    display: block;
+}
+
+.card-header {
+    color: var(--white);
+    font-size: 1.8rem;
+    font: 600;
+}
+.card-header:hover {
+    color: var(--cyan);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.card-description p {
+    color: var(--softBlue);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+.amount {
+    color: var(--cyan);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.date {
+    color: var(--softBlue);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.stats img {
+    vertical-align: sub;
+    margin-right: 0.4rem;
+}
+
+.divider {
+    border: 0.5px solid var(--line-darkBlue);
+}
+
+
+.card-details {
+    color: var(--softBlue);
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 1.5rem auto 1rem;
+}
+.card-details img {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+.card-details a {
+    text-decoration: none;
+    color: var(--white);
+}
+.card-details a:hover {
+    color: var(--cyan);
+    transition: .5s;
+}
+
+footer {
+    width: 90%;
+    margin: 6rem auto;
+}
+
+.attribution { 
+    font-size: 1.7rem; 
+    text-align: center;
+    color: var(--white);
+}
+.attribution a {
+    color: var(--softBlue);
+}
+
+@media (max-width: 550px) {
+    .footer {
+        width: 80%;
+    }
+    .attribution {
+        font-size: 1.5rem;
+    }
+}
