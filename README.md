@@ -18,7 +18,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click to reach solution](https://www.frontendmentor.io/solutions/nft-preview-card-3fZUZXI4yG)
-- Live Site URL: [Click to reach live site](https://your-live-site-url.com)
+- Live Site URL: [Click to reach live site](https://exquisite-genie-da8d70.netlify.app/)
 
 ## Author
 
